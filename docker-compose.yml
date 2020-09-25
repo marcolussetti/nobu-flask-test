@@ -8,7 +8,7 @@ services:
         - 27017:27017
       environment:
         MONGO_INITDB_ROOT_USERNAME: root
-        MONGO_INITDB_ROOT_PASSWORD: ballshit
+        MONGO_INITDB_ROOT_PASSWORD: whatever
 
     mongo-express:
       image: mongo-express
@@ -20,7 +20,7 @@ services:
       environment:
         ME_CONFIG_MONGODB_SERVER: mongo
         ME_CONFIG_MONGODB_ADMINUSERNAME: root
-        ME_CONFIG_MONGODB_ADMINPASSWORD: ballshit
+        ME_CONFIG_MONGODB_ADMINPASSWORD: whatever
 
 
     flask:
